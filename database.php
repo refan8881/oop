@@ -14,7 +14,7 @@ class Database
         if ($this->koneksi) {
             // echo "berhasl";
         }else {
-            echo "koneksi database gagal";
+           // echo "koneksi database gagal";
         }
     }
 }

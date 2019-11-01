@@ -22,27 +22,28 @@
 
 <fieldset>
     <legend>input data siswa</legend>
-    <form action="/siswa/proses.php?aksi=update" method="post"></form>
+    <form action="/siswa/proses.php?aksi=update" method="post">
         <input type="hidden" name="id" value="<?php echo $id; ?>">
 
         <table>
             <tr>
                 <th>nomor induk siswa</th>
-                <td><input type="number" nama="nis" value="<?php echo $nis; ?>" required></td>
+                <td><input type="number" name="nis" value="<?php echo $nis; ?>" required></td>
             </tr>
             <tr>
                 <th>nama siswa</th>
-                <td><input type="text" name="nama" value="<?php echo $name; ?>" required></td>
+                <td><input type="text" name="nama" value="<?php echo $nama; ?>" required></td>
             </tr>
             <tr>
                 <th>alamat</th>
-                <td><textarea name="alamat" value="<?php echo $alamat; ?>" required></td>
+                <td><textarea name="alamat" required><?php echo $alamat; ?></textarea></td>
             </tr>
             <tr>
                 <th><input type="submit" name="save" value="simpan"></th>
                 
             </tr>
         </table>
+        </form>
     </fieldset>
     
 </body>

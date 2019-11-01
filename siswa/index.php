@@ -24,7 +24,7 @@
             include '../database.php';
             $siswa = new Siswa();
             $no = 1;
-            foreach ($siswa ->index() as $data) {
+            foreach ($siswa->index() as $data) {
                 ?>
                 <tr>
                     <td><?php echo $no++;?></td>
@@ -35,7 +35,8 @@
                     <td> <a href ="edit.php?id=<?php echo $data['id'];?>">edit</a></td>
 
                     <td>
-                    <a href="proses.php?id=<?php echo $data['id']; ?>&aksi=delete"onclick="return confirm('apakah anda yakin mau menghapus data ini')">
+                    <a href="proses.php?id=<?php echo $data['id']; ?>&aksi=delete"
+                    onclick="return confirm('apakah anda yakin mau menghapus data ini')">
                     delete </a>
                     </td>
              

@@ -16,10 +16,10 @@ if ($aksi == "tambah") {
     header("location:index.php");
 
 }elseif ($aksi == "update") {
-    $siswa->update($nis,$nama,$alamat);
+    $siswa->update($id, $nis,$nama,$alamat);
     header("location:index.php");
 }elseif ($aksi == "delete") {
-    $siswa->delete($nis,$nama,$alamat);
+    $siswa->delete($_GET['id']);
     header("location:index.php");
 }
 ?>

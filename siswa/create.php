@@ -9,12 +9,12 @@
 <body>
 <fieldset>
     <legend>input data siswa</legend>
-    <form action="/siswa/proses.php?aksi=tambah" method="post"></form>
+    <form action="/siswa/proses.php?aksi=tambah" method="post">
 
         <table>
             <tr>
                 <th>nomor induk siswa</th>
-                <td><input type="number" nama="nis" required></td>
+                <td><input type="number" name="nis" required></td>
             </tr>
             <tr>
                 <th>nama siswa</th>
@@ -22,14 +22,14 @@
             </tr>
             <tr>
                 <th>alamat</th>
-                <td><textarea name="alamat" required></td>
+                <td><textarea name="alamat" cols="30" required></textarea></td>
             </tr>
             <tr>
                 <th><input type="submit" name="save" value="simpan"></th>
                 
             </tr>
         </table>
-    </fieldset>
-    
+    </form>
+</fieldset>
 </body>
 </html>
