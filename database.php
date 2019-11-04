@@ -12,7 +12,7 @@ class Database
             $this->db
         );
         if ($this->koneksi) {
-            // echo "berhasl";
+           // echo "berhasl";
         }else {
            // echo "koneksi database gagal";
         }
@@ -20,6 +20,8 @@ class Database
 }
 //data tabel siswa
 include 'siswa.php';
+
+include 'biodata.php';
 
 // // data tabel biodata
 
